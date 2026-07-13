@@ -10,7 +10,7 @@ export function PageHero({
   return (
     <section className="relative overflow-hidden bg-surface-dark py-16 text-white sm:py-20 md:py-28">
       <Image
-        src="/images/hero-1.jpg"
+        src="/images/hero-1.webp"
         alt=""
         fill
         priority

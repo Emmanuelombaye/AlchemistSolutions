@@ -1,4 +1,4 @@
-export const siteConfig = {
+﻿export const siteConfig = {
   name: "Alchemist Solutions",
   shortName: "ALCHEMIST",
   tagline: "Transforming Spaces. Engineered to Perfection.",
@@ -59,22 +59,22 @@ export const siteConfig = {
     slides: [
       {
         title: "Craft floors that elevate every room",
-        text: "Engineer-led tile and flooring installation — precision layouts, premium materials, flawless finishes.",
-        image: "/images/hero-1.jpg",
+        text: "Engineer-led tile and flooring installation â€” precision layouts, premium materials, flawless finishes.",
+        image: "/images/hero-1.webp",
         cta: "Discover More",
         ctaHref: "/about",
       },
       {
         title: "Porcelain, marble & hardwood done right",
         text: "From showrooms to residences, we deliver durable surfaces with architectural precision.",
-        image: "/images/hero-2.jpg",
+        image: "/images/hero-2.webp",
         cta: "View Projects",
         ctaHref: "/projects",
       },
       {
         title: "Your dream floors, engineered to last",
         text: "Licensed construction engineering expertise behind every tile line and floor plane.",
-        image: "/images/hero-3.jpg",
+        image: "/images/hero-3.webp",
         cta: "Get In Touch",
         ctaHref: "/contact",
       },
@@ -84,9 +84,9 @@ export const siteConfig = {
   about: {
     eyebrow: "About Us",
     title: "We install everything your floors need",
-    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl — measured, set, and finished to exacting standards.",
-    image: "/images/about-1.jpg",
-    imageSecondary: "/images/about-2.jpg",
+    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl â€” measured, set, and finished to exacting standards.",
+    image: "/images/about-1.webp",
+    imageSecondary: "/images/about-2.webp",
     checklist: [
       "Licensed construction engineer oversight",
       "Premium tile & flooring materials",
@@ -107,7 +107,7 @@ export const siteConfig = {
         excerpt:
           "Large-format and patterned porcelain with laser-straight joints and perfect falls.",
         body: "We specify and install porcelain for wet areas, living spaces, and commercial lobbies. Substrate preparation, membrane systems, and precision cutting are standard on every job.",
-        image: "/images/service-1.jpg",
+        image: "/images/service-1.webp",
         icon: "grid",
       },
       {
@@ -116,7 +116,7 @@ export const siteConfig = {
         excerpt:
           "Natural stone floors and feature walls with careful matching and sealing.",
         body: "From Carrara-inspired marble to local stone, we handle dry-lay sequencing, bookmatching, and protective sealing so your surfaces stay beautiful for years.",
-        image: "/images/service-2.jpg",
+        image: "/images/service-2.webp",
         icon: "layers",
       },
       {
@@ -125,7 +125,7 @@ export const siteConfig = {
         excerpt:
           "Engineered and solid hardwood with refined finishes and expansion detailing.",
         body: "Acclimation, subfloor leveling, and professional sanding/finishing deliver quiet, stable timber floors for homes and boutique commercial spaces.",
-        image: "/images/service-3.jpg",
+        image: "/images/service-3.webp",
         icon: "wood",
       },
       {
@@ -133,8 +133,8 @@ export const siteConfig = {
         title: "Luxury Vinyl",
         excerpt:
           "SPC and LVP systems that look premium and perform in high-traffic areas.",
-        body: "Click-lock and glue-down vinyl with acoustic underlays — ideal for apartments, clinics, and retail where durability meets design.",
-        image: "/images/service-4.jpg",
+        body: "Click-lock and glue-down vinyl with acoustic underlays â€” ideal for apartments, clinics, and retail where durability meets design.",
+        image: "/images/service-4.webp",
         icon: "square",
       },
       {
@@ -143,7 +143,7 @@ export const siteConfig = {
         excerpt:
           "Watertight showers, bathrooms, and balconies with correct falls to drain.",
         body: "Full wet-area systems including tanking membranes, niche detailing, and anti-slip selections for safety without sacrificing style.",
-        image: "/images/service-5.jpg",
+        image: "/images/service-5.webp",
         icon: "droplet",
       },
       {
@@ -151,8 +151,8 @@ export const siteConfig = {
         title: "Floor Restoration",
         excerpt:
           "Grind, polish, and revive tired stone and tile surfaces.",
-        body: "Diamond grinding, honing, polishing, and resealing bring existing floors back to life — often faster and greener than full replacement.",
-        image: "/images/service-6.jpg",
+        body: "Diamond grinding, honing, polishing, and resealing bring existing floors back to life â€” often faster and greener than full replacement.",
+        image: "/images/service-6.webp",
         icon: "sparkles",
       },
     ],
@@ -168,15 +168,15 @@ export const siteConfig = {
         category: "Residential",
         excerpt: "Bookmatched marble throughout living and master suite.",
         body: "A full-villa marble package with continuous veining across living, corridor, and ensuite zones. Includes underfloor heating coordination and matte sealing.",
-        image: "/images/project-1.jpg",
+        image: "/images/project-1.webp",
       },
       {
         slug: "hotel-lobby-porcelain",
         title: "Hotel Lobby Porcelain",
         category: "Hospitality",
         excerpt: "Large-format porcelain with feature mosaic insert.",
-        body: "Night works for a boutique hotel lobby: 1200×1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
-        image: "/images/project-2.jpg",
+        body: "Night works for a boutique hotel lobby: 1200Ã—1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
+        image: "/images/project-2.webp",
       },
       {
         slug: "penthouse-hardwood",
@@ -184,7 +184,7 @@ export const siteConfig = {
         category: "Residential",
         excerpt: "Wide-plank engineered oak with custom stain.",
         body: "Open-plan penthouse flooring with herringbone accent in the dining zone and seamless transitions to tiled wet areas.",
-        image: "/images/project-3.jpg",
+        image: "/images/project-3.webp",
       },
       {
         slug: "spa-wet-room",
@@ -192,15 +192,15 @@ export const siteConfig = {
         category: "Wellness",
         excerpt: "Anti-slip porcelain with linear drains.",
         body: "Steam room and spa wet zones with epoxy grout, waterproof boards, and precisely set linear drainage.",
-        image: "/images/project-4.jpg",
+        image: "/images/project-4.webp",
       },
       {
         slug: "retail-showroom",
         title: "Retail Showroom",
         category: "Commercial",
         excerpt: "Mixed porcelain and vinyl zones for brand experience.",
-        body: "Showroom zoning that guides customer flow — polished porcelain at entry, warm vinyl in consult rooms.",
-        image: "/images/project-5.jpg",
+        body: "Showroom zoning that guides customer flow â€” polished porcelain at entry, warm vinyl in consult rooms.",
+        image: "/images/project-5.webp",
       },
       {
         slug: "kitchen-stone-island",
@@ -208,7 +208,7 @@ export const siteConfig = {
         category: "Residential",
         excerpt: "Stone floor paired with waterfall island cladding.",
         body: "Kitchen flooring and island cladding in matching quartzite with microbevel edges and sealed joints.",
-        image: "/images/project-6.jpg",
+        image: "/images/project-6.webp",
       },
     ],
   },
@@ -228,19 +228,19 @@ export const siteConfig = {
         name: "Amina W.",
         role: "Homeowner",
         text: "The marble installation was flawless. Straight lines, quiet floors, and the crew left the site spotless.",
-        image: "/images/team-1.jpg",
+        image: "/images/team-1.webp",
       },
       {
         name: "David K.",
         role: "Hotel Manager",
         text: "They managed overnight works without disrupting guests. The lobby porcelain looks exceptional.",
-        image: "/images/team-2.jpg",
+        image: "/images/team-2.webp",
       },
       {
         name: "Grace M.",
         role: "Interior Designer",
         text: "Alchemist is my go-to for tiling. Engineering precision with a designer's eye for detail.",
-        image: "/images/team-3.jpg",
+        image: "/images/team-3.webp",
       },
     ],
   },
@@ -252,22 +252,22 @@ export const siteConfig = {
       {
         name: "Felix Kajunior",
         role: "Founder & Construction Engineer",
-        image: "/images/team-1.jpg",
+        image: "/images/team-1.webp",
       },
       {
         name: "Sarah Njeri",
         role: "Lead Tiling Specialist",
-        image: "/images/team-2.jpg",
+        image: "/images/team-2.webp",
       },
       {
         name: "James Otieno",
         role: "Project Manager",
-        image: "/images/team-3.jpg",
+        image: "/images/team-3.webp",
       },
       {
         name: "Lydia Chebet",
         role: "Design Consultant",
-        image: "/images/team-4.jpg",
+        image: "/images/team-4.webp",
       },
     ],
   },
@@ -291,16 +291,16 @@ export const siteConfig = {
         date: "12 Jun 2026",
         excerpt:
           "A practical guide to absorption rates, traffic ratings, and finish choices.",
-        image: "/images/blog-1.jpg",
-        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone — including PEI ratings, slip resistance, and rectified edges for tight joints.",
+        image: "/images/blog-1.webp",
+        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone â€” including PEI ratings, slip resistance, and rectified edges for tight joints.",
       },
       {
         slug: "substrate-prep-matters",
         title: "Why substrate prep decides your floor's life",
         date: "28 May 2026",
         excerpt:
-          "Leveling, membranes, and movement joints — the invisible work that prevents failure.",
-        image: "/images/blog-2.jpg",
+          "Leveling, membranes, and movement joints â€” the invisible work that prevents failure.",
+        image: "/images/blog-2.webp",
         body: "Most flooring failures start below the surface. We flatten slabs, install decoupling membranes where needed, and honor movement joints so tiles and timber stay stable through seasons and heavy use.",
       },
       {
@@ -309,8 +309,8 @@ export const siteConfig = {
         date: "04 May 2026",
         excerpt:
           "Wide planks, soft matte textures, and acoustic-ready cores.",
-        image: "/images/blog-3.jpg",
-        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings — a smart upgrade path when full stone isn't required.",
+        image: "/images/blog-3.webp",
+        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings â€” a smart upgrade path when full stone isn't required.",
       },
     ],
   },
@@ -364,3 +364,4 @@ export function getProject(slug: string) {
 export function getPost(slug: string) {
   return siteConfig.blog.items.find((p) => p.slug === slug);
 }
+

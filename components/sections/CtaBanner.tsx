@@ -7,7 +7,7 @@ export function CtaBanner() {
   return (
     <section className="relative overflow-hidden bg-ink py-14 text-white md:py-20">
       <Image
-        src="/images/cta-bg.jpg"
+        src="/images/cta-bg.webp"
         alt=""
         fill
         sizes="100vw"
