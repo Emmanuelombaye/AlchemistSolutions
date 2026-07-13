@@ -40,6 +40,8 @@ export const siteConfig = {
         { label: "Marble & Stone", href: "/services/marble-stone" },
         { label: "Hardwood Flooring", href: "/services/hardwood-flooring" },
         { label: "Luxury Vinyl", href: "/services/luxury-vinyl" },
+        { label: "Bath & Wet Areas", href: "/services/bath-wet-areas" },
+        { label: "Floor Restoration", href: "/services/floor-restoration" },
       ],
     },
     {
@@ -59,7 +61,7 @@ export const siteConfig = {
     slides: [
       {
         title: "Craft floors that elevate every room",
-        text: "Engineer-led tile and flooring installation ΓÇö precision layouts, premium materials, flawless finishes.",
+        text: "Engineer-led tile and flooring installation — precision layouts, premium materials, flawless finishes.",
         image: "/images/hero-1.webp",
         cta: "Discover More",
         ctaHref: "/about",
@@ -84,7 +86,7 @@ export const siteConfig = {
   about: {
     eyebrow: "About Us",
     title: "We install everything your floors need",
-    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl ΓÇö measured, set, and finished to exacting standards.",
+    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl — measured, set, and finished to exacting standards.",
     image: "/images/about-1.webp",
     imageSecondary: "/images/about-2.webp",
     checklist: [
@@ -99,14 +101,28 @@ export const siteConfig = {
 
   services: {
     eyebrow: "What we do",
-    title: "Our services that we provide",
+    title: "Engineered flooring for every space",
+    intro:
+      "From porcelain and marble to hardwood, vinyl, wet rooms, and restoration — every service is planned by a construction engineer and finished by specialist installers.",
     items: [
       {
         slug: "porcelain-tiling",
         title: "Porcelain Tiling",
         excerpt:
-          "Large-format and patterned porcelain with laser-straight joints and perfect falls.",
-        body: "We specify and install porcelain for wet areas, living spaces, and commercial lobbies. Substrate preparation, membrane systems, and precision cutting are standard on every job.",
+          "Large-format and patterned porcelain with laser-straight joints, correct falls, and lobby-grade durability.",
+        body: "We specify and install porcelain for homes, wet areas, and commercial lobbies. Every job starts with substrate survey and leveling, then membrane systems where needed, precision cutting, and lippage-controlled setting. You get floors that look architectural and perform under traffic, moisture, and daily use.",
+        highlights: [
+          "Large-format slabs up to 1200×1200",
+          "Laser-straight joints and lippage control",
+          "Wet-area and high-traffic specifications",
+          "Pattern layouts and feature banding",
+        ],
+        process: [
+          "Site survey, levels, and movement joint plan",
+          "Substrate prep, membranes, and adhesive selection",
+          "Dry-lay, cutting, setting, and grouting",
+          "Protection, clean-down, and handover checklist",
+        ],
         image: "/images/service-1.webp",
         icon: "grid",
       },
@@ -114,8 +130,20 @@ export const siteConfig = {
         slug: "marble-stone",
         title: "Marble & Stone",
         excerpt:
-          "Natural stone floors and feature walls with careful matching and sealing.",
-        body: "From Carrara-inspired marble to local stone, we handle dry-lay sequencing, bookmatching, and protective sealing so your surfaces stay beautiful for years.",
+          "Natural stone floors and feature walls with careful matching, bookmatching, and long-term sealing.",
+        body: "From Carrara-inspired marble to local stone, we sequence dry-lays, match veining, and seal for stain resistance. Edges, thresholds, and wall returns are detailed so the finish reads continuous — not patched. Ideal for villas, lobbies, and statement interiors that need craft and engineering together.",
+        highlights: [
+          "Vein matching and bookmatched layouts",
+          "Protective sealing for daily wear",
+          "Feature walls, stairs, and floors",
+          "Underfloor heating coordination",
+        ],
+        process: [
+          "Stone selection and finish samples",
+          "Dry-lay approval and cut list",
+          "Setting, jointing, and edge detailing",
+          "Honing/polish options and seal application",
+        ],
         image: "/images/service-2.webp",
         icon: "layers",
       },
@@ -123,8 +151,20 @@ export const siteConfig = {
         slug: "hardwood-flooring",
         title: "Hardwood Flooring",
         excerpt:
-          "Engineered and solid hardwood with refined finishes and expansion detailing.",
-        body: "Acclimation, subfloor leveling, and professional sanding/finishing deliver quiet, stable timber floors for homes and boutique commercial spaces.",
+          "Engineered and solid hardwood with refined finishes, quiet underfoot feel, and correct expansion detailing.",
+        body: "Timber floors fail when humidity, subfloor, and expansion are ignored. We acclimate material, level substrates, and install engineered or solid hardwood with professional sanding and finishing where required. The result is a warm, quiet floor that stays stable in Nairobi homes and boutique commercial spaces.",
+        highlights: [
+          "Engineered and solid timber options",
+          "Subfloor leveling and moisture checks",
+          "Expansion detailing at walls and doors",
+          "Sand, stain, and finish packages",
+        ],
+        process: [
+          "Moisture and subfloor assessment",
+          "Acclimation and layout planning",
+          "Install, sanding, and finishing",
+          "Care guidance and maintenance plan",
+        ],
         image: "/images/service-3.webp",
         icon: "wood",
       },
@@ -132,8 +172,20 @@ export const siteConfig = {
         slug: "luxury-vinyl",
         title: "Luxury Vinyl",
         excerpt:
-          "SPC and LVP systems that look premium and perform in high-traffic areas.",
-        body: "Click-lock and glue-down vinyl with acoustic underlays ΓÇö ideal for apartments, clinics, and retail where durability meets design.",
+          "SPC and LVP systems that look premium, resist spills, and perform in apartments, clinics, and retail.",
+        body: "Click-lock and glue-down vinyl with acoustic underlays deliver wood and stone looks without the maintenance load. We specify wear layers for traffic class, prepare substrates for a flat plane, and detail transitions so the floor feels continuous across rooms. Fast install, strong durability, clean modern finish.",
+        highlights: [
+          "SPC and LVP for heavy traffic",
+          "Acoustic underlay options",
+          "Waterproof core systems",
+          "Fast turnaround with minimal mess",
+        ],
+        process: [
+          "Traffic class and style selection",
+          "Substrate leveling and underlay",
+          "Click-lock or glue-down install",
+          "Transitions, skirting, and handover",
+        ],
         image: "/images/service-4.webp",
         icon: "square",
       },
@@ -141,8 +193,20 @@ export const siteConfig = {
         slug: "bath-wet-areas",
         title: "Bath & Wet Areas",
         excerpt:
-          "Watertight showers, bathrooms, and balconies with correct falls to drain.",
-        body: "Full wet-area systems including tanking membranes, niche detailing, and anti-slip selections for safety without sacrificing style.",
+          "Watertight showers, bathrooms, and balconies with correct falls to drain and anti-slip finishes.",
+        body: "Wet areas need more than nice tile — they need tanking, falls, and detailing that keeps water where it belongs. We install full wet-room systems: membranes, niches, linear drains, and anti-slip selections that stay safe without looking institutional. Perfect for ensuite upgrades, hotel bathrooms, and balcony waterproofing.",
+        highlights: [
+          "Tanking membranes and wet-room systems",
+          "Falls to drain and linear drains",
+          "Niche, shelf, and bench detailing",
+          "Anti-slip tile and safety finishes",
+        ],
+        process: [
+          "Waterproofing design and drain plan",
+          "Membrane install and flood test where required",
+          "Tile setting with wet-area adhesives",
+          "Silicone, fittings coordination, and clean finish",
+        ],
         image: "/images/service-5.webp",
         icon: "droplet",
       },
@@ -150,8 +214,20 @@ export const siteConfig = {
         slug: "floor-restoration",
         title: "Floor Restoration",
         excerpt:
-          "Grind, polish, and revive tired stone and tile surfaces.",
-        body: "Diamond grinding, honing, polishing, and resealing bring existing floors back to life ΓÇö often faster and greener than full replacement.",
+          "Grind, hone, polish, and reseal tired stone and tile — often faster and greener than full replacement.",
+        body: "Existing marble, terrazzo, and tile can look new again with diamond grinding, honing, polishing, and protective resealing. We assess damage, lippage, and stain depth, then restore the surface while protecting adjacent finishes. Ideal for lobbies, corridors, and homes that need a refresh without demolition.",
+        highlights: [
+          "Diamond grind, hone, and polish",
+          "Stain treatment and crack repair",
+          "Lippage reduction where feasible",
+          "Protective seal for lasting clarity",
+        ],
+        process: [
+          "Condition survey and sample polish",
+          "Grind / hone / polish sequence",
+          "Repair, densify, and seal",
+          "Aftercare kit and maintenance schedule",
+        ],
         image: "/images/service-6.webp",
         icon: "sparkles",
       },
@@ -175,7 +251,7 @@ export const siteConfig = {
         title: "Hotel Lobby Porcelain",
         category: "Hospitality",
         excerpt: "Large-format porcelain with feature mosaic insert.",
-        body: "Night works for a boutique hotel lobby: 1200├ù1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
+        body: "Night works for a boutique hotel lobby: 1200×1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
         image: "/images/project-2.webp",
       },
       {
@@ -199,7 +275,7 @@ export const siteConfig = {
         title: "Retail Showroom",
         category: "Commercial",
         excerpt: "Mixed porcelain and vinyl zones for brand experience.",
-        body: "Showroom zoning that guides customer flow ΓÇö polished porcelain at entry, warm vinyl in consult rooms.",
+        body: "Showroom zoning that guides customer flow — polished porcelain at entry, warm vinyl in consult rooms.",
         image: "/images/project-5.webp",
       },
       {
@@ -292,14 +368,14 @@ export const siteConfig = {
         excerpt:
           "A practical guide to absorption rates, traffic ratings, and finish choices.",
         image: "/images/blog-1.webp",
-        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone ΓÇö including PEI ratings, slip resistance, and rectified edges for tight joints.",
+        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone — including PEI ratings, slip resistance, and rectified edges for tight joints.",
       },
       {
         slug: "substrate-prep-matters",
         title: "Why substrate prep decides your floor's life",
         date: "28 May 2026",
         excerpt:
-          "Leveling, membranes, and movement joints ΓÇö the invisible work that prevents failure.",
+          "Leveling, membranes, and movement joints — the invisible work that prevents failure.",
         image: "/images/blog-2.webp",
         body: "Most flooring failures start below the surface. We flatten slabs, install decoupling membranes where needed, and honor movement joints so tiles and timber stay stable through seasons and heavy use.",
       },
@@ -310,7 +386,7 @@ export const siteConfig = {
         excerpt:
           "Wide planks, soft matte textures, and acoustic-ready cores.",
         image: "/images/blog-3.webp",
-        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings ΓÇö a smart upgrade path when full stone isn't required.",
+        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings — a smart upgrade path when full stone isn't required.",
       },
     ],
   },

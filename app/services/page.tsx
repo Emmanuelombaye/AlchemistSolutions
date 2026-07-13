@@ -5,6 +5,8 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Services",
+  description:
+    "Porcelain, marble, hardwood, luxury vinyl, wet areas, and floor restoration — engineer-led flooring services in Nairobi.",
 };
 
 export default function ServicesPage() {
