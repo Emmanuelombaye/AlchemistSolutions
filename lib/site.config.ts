@@ -1,4 +1,4 @@
-﻿export const siteConfig = {
+export const siteConfig = {
   name: "Alchemist Solutions",
   shortName: "ALCHEMIST",
   tagline: "Transforming Spaces. Engineered to Perfection.",
@@ -59,7 +59,7 @@
     slides: [
       {
         title: "Craft floors that elevate every room",
-        text: "Engineer-led tile and flooring installation â€” precision layouts, premium materials, flawless finishes.",
+        text: "Engineer-led tile and flooring installation ΓÇö precision layouts, premium materials, flawless finishes.",
         image: "/images/hero-1.webp",
         cta: "Discover More",
         ctaHref: "/about",
@@ -84,7 +84,7 @@
   about: {
     eyebrow: "About Us",
     title: "We install everything your floors need",
-    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl â€” measured, set, and finished to exacting standards.",
+    text: "Alchemist Solutions blends construction engineering with artisan tiling craft. Founded by Felix Kajunior, we specialize in porcelain, marble, stone, hardwood, and luxury vinyl ΓÇö measured, set, and finished to exacting standards.",
     image: "/images/about-1.webp",
     imageSecondary: "/images/about-2.webp",
     checklist: [
@@ -133,7 +133,7 @@
         title: "Luxury Vinyl",
         excerpt:
           "SPC and LVP systems that look premium and perform in high-traffic areas.",
-        body: "Click-lock and glue-down vinyl with acoustic underlays â€” ideal for apartments, clinics, and retail where durability meets design.",
+        body: "Click-lock and glue-down vinyl with acoustic underlays ΓÇö ideal for apartments, clinics, and retail where durability meets design.",
         image: "/images/service-4.webp",
         icon: "square",
       },
@@ -151,7 +151,7 @@
         title: "Floor Restoration",
         excerpt:
           "Grind, polish, and revive tired stone and tile surfaces.",
-        body: "Diamond grinding, honing, polishing, and resealing bring existing floors back to life â€” often faster and greener than full replacement.",
+        body: "Diamond grinding, honing, polishing, and resealing bring existing floors back to life ΓÇö often faster and greener than full replacement.",
         image: "/images/service-6.webp",
         icon: "sparkles",
       },
@@ -175,7 +175,7 @@
         title: "Hotel Lobby Porcelain",
         category: "Hospitality",
         excerpt: "Large-format porcelain with feature mosaic insert.",
-        body: "Night works for a boutique hotel lobby: 1200Ã—1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
+        body: "Night works for a boutique hotel lobby: 1200├ù1200 porcelain slabs, recessed LED thresholds, and high-traffic grout systems.",
         image: "/images/project-2.webp",
       },
       {
@@ -199,7 +199,7 @@
         title: "Retail Showroom",
         category: "Commercial",
         excerpt: "Mixed porcelain and vinyl zones for brand experience.",
-        body: "Showroom zoning that guides customer flow â€” polished porcelain at entry, warm vinyl in consult rooms.",
+        body: "Showroom zoning that guides customer flow ΓÇö polished porcelain at entry, warm vinyl in consult rooms.",
         image: "/images/project-5.webp",
       },
       {
@@ -292,14 +292,14 @@
         excerpt:
           "A practical guide to absorption rates, traffic ratings, and finish choices.",
         image: "/images/blog-1.webp",
-        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone â€” including PEI ratings, slip resistance, and rectified edges for tight joints.",
+        body: "Porcelain generally offers lower water absorption and higher durability for wet and commercial areas. Ceramic remains cost-effective for light-duty walls. We help you match the right body and finish to each zone ΓÇö including PEI ratings, slip resistance, and rectified edges for tight joints.",
       },
       {
         slug: "substrate-prep-matters",
         title: "Why substrate prep decides your floor's life",
         date: "28 May 2026",
         excerpt:
-          "Leveling, membranes, and movement joints â€” the invisible work that prevents failure.",
+          "Leveling, membranes, and movement joints ΓÇö the invisible work that prevents failure.",
         image: "/images/blog-2.webp",
         body: "Most flooring failures start below the surface. We flatten slabs, install decoupling membranes where needed, and honor movement joints so tiles and timber stay stable through seasons and heavy use.",
       },
@@ -310,7 +310,7 @@
         excerpt:
           "Wide planks, soft matte textures, and acoustic-ready cores.",
         image: "/images/blog-3.webp",
-        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings â€” a smart upgrade path when full stone isn't required.",
+        body: "SPC cores with realistic embossing dominate residential refreshes this year. Pair them with quality underlays for sound control in multi-storey buildings ΓÇö a smart upgrade path when full stone isn't required.",
       },
     ],
   },
@@ -364,4 +364,3 @@ export function getProject(slug: string) {
 export function getPost(slug: string) {
   return siteConfig.blog.items.find((p) => p.slug === slug);
 }
-
