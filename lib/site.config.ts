@@ -111,6 +111,9 @@ export const siteConfig = {
         excerpt:
           "Large-format and patterned porcelain with laser-straight joints, correct falls, and lobby-grade durability.",
         body: "We specify and install porcelain for homes, wet areas, and commercial lobbies. Every job starts with substrate survey and leveling, then membrane systems where needed, precision cutting, and lippage-controlled setting. You get floors that look architectural and perform under traffic, moisture, and daily use.",
+        idealFor: ["Living rooms", "Lobbies", "Kitchens", "Commercial floors"],
+        materials: ["Porcelain slabs", "Flexible adhesives", "Epoxy/grout systems", "Movement joints"],
+        duration: "3–10 days typical",
         highlights: [
           "Large-format slabs up to 1200×1200",
           "Laser-straight joints and lippage control",
@@ -123,6 +126,22 @@ export const siteConfig = {
           "Dry-lay, cutting, setting, and grouting",
           "Protection, clean-down, and handover checklist",
         ],
+        faqs: [
+          {
+            q: "Can you install large-format porcelain on existing floors?",
+            a: "Yes, after we check levels, bond, and structural suitability. Uneven substrates are leveled first so lippage stays controlled.",
+          },
+          {
+            q: "Do you handle wet-area porcelain too?",
+            a: "Absolutely. We pair porcelain with the right membranes, falls, and adhesives for showers, balconies, and wet rooms.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-1.webp", alt: "Porcelain tiling finished living space" },
+          { src: "/images/gallery-porcelain-1.webp", alt: "Precision porcelain joint installation" },
+          { src: "/images/gallery-porcelain-2.webp", alt: "Large-format porcelain living room floor" },
+          { src: "/images/project-2.webp", alt: "Hotel lobby porcelain installation" },
+        ],
         image: "/images/service-1.webp",
         icon: "grid",
       },
@@ -132,6 +151,9 @@ export const siteConfig = {
         excerpt:
           "Natural stone floors and feature walls with careful matching, bookmatching, and long-term sealing.",
         body: "From Carrara-inspired marble to local stone, we sequence dry-lays, match veining, and seal for stain resistance. Edges, thresholds, and wall returns are detailed so the finish reads continuous — not patched. Ideal for villas, lobbies, and statement interiors that need craft and engineering together.",
+        idealFor: ["Villas", "Feature lobbies", "Stairs", "Ensuite suites"],
+        materials: ["Marble & natural stone", "Stone adhesives", "Sealers", "Edge profiles"],
+        duration: "5–14 days typical",
         highlights: [
           "Vein matching and bookmatched layouts",
           "Protective sealing for daily wear",
@@ -144,6 +166,22 @@ export const siteConfig = {
           "Setting, jointing, and edge detailing",
           "Honing/polish options and seal application",
         ],
+        faqs: [
+          {
+            q: "Will marble stain in kitchens or bathrooms?",
+            a: "We specify the right finish and seal system for the room. Wet and food areas get denser sealing and care guidance at handover.",
+          },
+          {
+            q: "Can you bookmatch slabs across walls and floors?",
+            a: "Yes. We dry-lay and approve veining sequences before setting so the pattern reads continuous.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-2.webp", alt: "Marble and stone luxury foyer" },
+          { src: "/images/gallery-marble-1.webp", alt: "Bookmatched marble feature wall and floor" },
+          { src: "/images/gallery-marble-2.webp", alt: "Marble staircase and lobby flooring" },
+          { src: "/images/project-1.webp", alt: "Villa marble suite installation" },
+        ],
         image: "/images/service-2.webp",
         icon: "layers",
       },
@@ -153,6 +191,9 @@ export const siteConfig = {
         excerpt:
           "Engineered and solid hardwood with refined finishes, quiet underfoot feel, and correct expansion detailing.",
         body: "Timber floors fail when humidity, subfloor, and expansion are ignored. We acclimate material, level substrates, and install engineered or solid hardwood with professional sanding and finishing where required. The result is a warm, quiet floor that stays stable in Nairobi homes and boutique commercial spaces.",
+        idealFor: ["Bedrooms", "Living areas", "Penthouses", "Boutique offices"],
+        materials: ["Engineered oak", "Solid hardwood", "Underlays", "Finishes & stains"],
+        duration: "4–12 days typical",
         highlights: [
           "Engineered and solid timber options",
           "Subfloor leveling and moisture checks",
@@ -165,6 +206,22 @@ export const siteConfig = {
           "Install, sanding, and finishing",
           "Care guidance and maintenance plan",
         ],
+        faqs: [
+          {
+            q: "Engineered or solid hardwood — which is better?",
+            a: "Engineered is more stable over underfloor heating and humidity swings. Solid suits selected dry zones with correct expansion detailing.",
+          },
+          {
+            q: "How long before we can walk on the floor?",
+            a: "Click systems are often same-day usable. Sand-and-finish packages need curing time — we confirm the schedule before work starts.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-3.webp", alt: "Hardwood flooring bedroom install" },
+          { src: "/images/gallery-hardwood-1.webp", alt: "Wide oak hardwood planks in bedroom" },
+          { src: "/images/gallery-hardwood-2.webp", alt: "Hardwood installation detail and finish" },
+          { src: "/images/project-3.webp", alt: "Penthouse hardwood flooring project" },
+        ],
         image: "/images/service-3.webp",
         icon: "wood",
       },
@@ -174,6 +231,9 @@ export const siteConfig = {
         excerpt:
           "SPC and LVP systems that look premium, resist spills, and perform in apartments, clinics, and retail.",
         body: "Click-lock and glue-down vinyl with acoustic underlays deliver wood and stone looks without the maintenance load. We specify wear layers for traffic class, prepare substrates for a flat plane, and detail transitions so the floor feels continuous across rooms. Fast install, strong durability, clean modern finish.",
+        idealFor: ["Apartments", "Clinics", "Retail", "Offices"],
+        materials: ["SPC / LVP planks", "Acoustic underlay", "Transition profiles", "Moisture barriers"],
+        duration: "1–5 days typical",
         highlights: [
           "SPC and LVP for heavy traffic",
           "Acoustic underlay options",
@@ -186,6 +246,22 @@ export const siteConfig = {
           "Click-lock or glue-down install",
           "Transitions, skirting, and handover",
         ],
+        faqs: [
+          {
+            q: "Is luxury vinyl waterproof?",
+            a: "SPC cores resist spills well. We still detail wet edges and transitions correctly so water does not sit under the floor.",
+          },
+          {
+            q: "Can vinyl go over existing tile?",
+            a: "Often yes, if the surface is flat, sound, and properly prepared. We assess on site before confirming.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-4.webp", alt: "Luxury vinyl open-plan apartment floor" },
+          { src: "/images/gallery-vinyl-1.webp", alt: "Wood-look vinyl in modern kitchen living space" },
+          { src: "/images/gallery-vinyl-2.webp", alt: "Commercial corridor luxury vinyl flooring" },
+          { src: "/images/blog-3.webp", alt: "Luxury vinyl trend interior finish" },
+        ],
         image: "/images/service-4.webp",
         icon: "square",
       },
@@ -195,6 +271,9 @@ export const siteConfig = {
         excerpt:
           "Watertight showers, bathrooms, and balconies with correct falls to drain and anti-slip finishes.",
         body: "Wet areas need more than nice tile — they need tanking, falls, and detailing that keeps water where it belongs. We install full wet-room systems: membranes, niches, linear drains, and anti-slip selections that stay safe without looking institutional. Perfect for ensuite upgrades, hotel bathrooms, and balcony waterproofing.",
+        idealFor: ["Showers", "Ensuites", "Hotel bathrooms", "Balconies"],
+        materials: ["Tanking membranes", "Anti-slip porcelain", "Linear drains", "Wet-area adhesives"],
+        duration: "4–12 days typical",
         highlights: [
           "Tanking membranes and wet-room systems",
           "Falls to drain and linear drains",
@@ -207,6 +286,22 @@ export const siteConfig = {
           "Tile setting with wet-area adhesives",
           "Silicone, fittings coordination, and clean finish",
         ],
+        faqs: [
+          {
+            q: "Do you flood-test wet rooms?",
+            a: "Where the design requires it, yes. We verify membranes before tiling so leaks are caught early.",
+          },
+          {
+            q: "Can you renovate an existing shower without full demolition?",
+            a: "Sometimes. We inspect substrate and waterproofing first — if compromised, a full system rebuild is the durable option.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-5.webp", alt: "Luxury wet room porcelain bathroom" },
+          { src: "/images/gallery-wet-1.webp", alt: "Walk-in shower with linear drain detailing" },
+          { src: "/images/gallery-wet-2.webp", alt: "Balcony and wet-area anti-slip tiling" },
+          { src: "/images/project-4.webp", alt: "Spa wet room flooring project" },
+        ],
         image: "/images/service-5.webp",
         icon: "droplet",
       },
@@ -216,6 +311,9 @@ export const siteConfig = {
         excerpt:
           "Grind, hone, polish, and reseal tired stone and tile — often faster and greener than full replacement.",
         body: "Existing marble, terrazzo, and tile can look new again with diamond grinding, honing, polishing, and protective resealing. We assess damage, lippage, and stain depth, then restore the surface while protecting adjacent finishes. Ideal for lobbies, corridors, and homes that need a refresh without demolition.",
+        idealFor: ["Lobbies", "Corridors", "Stone floors", "Tired tile"],
+        materials: ["Diamond abrasives", "Densifiers", "Sealers", "Repair compounds"],
+        duration: "2–7 days typical",
         highlights: [
           "Diamond grind, hone, and polish",
           "Stain treatment and crack repair",
@@ -227,6 +325,22 @@ export const siteConfig = {
           "Grind / hone / polish sequence",
           "Repair, densify, and seal",
           "Aftercare kit and maintenance schedule",
+        ],
+        faqs: [
+          {
+            q: "Is restoration cheaper than replacement?",
+            a: "Usually yes when the substrate is sound. We sample a section first so you can compare finish and cost before committing.",
+          },
+          {
+            q: "How long does a restored floor stay glossy?",
+            a: "With the right seal and maintenance plan, clarity lasts. High-traffic lobbies may need periodic maintenance polish.",
+          },
+        ],
+        gallery: [
+          { src: "/images/service-6.webp", alt: "Restored polished stone floor finish" },
+          { src: "/images/gallery-restore-1.webp", alt: "Diamond-polished lobby floor restoration" },
+          { src: "/images/gallery-restore-2.webp", alt: "Stone floor grind hone polish detail" },
+          { src: "/images/about-2.webp", alt: "Finished interior flooring after restoration quality work" },
         ],
         image: "/images/service-6.webp",
         icon: "sparkles",
