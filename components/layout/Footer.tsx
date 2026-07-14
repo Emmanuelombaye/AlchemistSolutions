@@ -1,20 +1,20 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
+import { Logo } from "@/components/brand/Logo";
 
 export function Footer() {
   return (
     <footer className="bg-surface-dark pb-[4.75rem] text-white lg:pb-0">
       <div className="container-site grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <div className="mb-4 flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center bg-brand text-sm font-bold">
-              AS
-            </span>
-            <span className="text-lg font-bold tracking-tight">
-              {siteConfig.name}
-            </span>
-          </div>
+          <Link
+            href="/"
+            className="mb-5 inline-flex no-underline"
+            aria-label={siteConfig.name}
+          >
+            <Logo size="lg" />
+          </Link>
           <p className="max-w-md text-sm leading-relaxed text-white/65">
             {siteConfig.footer.about}
           </p>

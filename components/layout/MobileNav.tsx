@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
+import { Logo } from "@/components/brand/Logo";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -56,14 +57,7 @@ export function MobileNav() {
               className="absolute inset-x-0 top-0 flex max-h-[min(100dvh,100%)] flex-col bg-white shadow-[0_16px_40px_rgba(21,22,28,0.18)]"
             >
               <div className="flex h-14 items-center justify-between border-b border-line px-4">
-                <div className="flex items-center gap-2.5">
-                  <span className="grid h-8 w-8 place-items-center bg-brand text-[0.7rem] font-bold text-white">
-                    AS
-                  </span>
-                  <span className="text-sm font-bold tracking-tight text-ink">
-                    {siteConfig.shortName}
-                  </span>
-                </div>
+                <Logo size="sm" />
                 <button
                   type="button"
                   aria-label="Close menu"

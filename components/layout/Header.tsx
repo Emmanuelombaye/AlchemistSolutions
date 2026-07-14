@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Clock3, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { Logo } from "@/components/brand/Logo";
 
 function SocialGlyph({ label }: { label: string }) {
   const common = {
@@ -80,14 +81,10 @@ export function Header() {
       <div className="container-site flex h-14 items-center justify-between gap-3 md:h-16">
         <Link
           href="/"
-          className="flex min-w-0 items-center gap-2.5 no-underline"
+          className="flex min-w-0 items-center no-underline"
+          aria-label={siteConfig.name}
         >
-          <span className="grid h-9 w-9 shrink-0 place-items-center bg-brand text-xs font-bold text-white md:h-10 md:w-10 md:text-sm">
-            AS
-          </span>
-          <span className="truncate text-[0.95rem] font-bold tracking-tight text-ink md:text-lg">
-            {siteConfig.shortName}
-          </span>
+          <Logo priority size="md" />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex xl:gap-7">

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: [{ url: "/images/hero-1.webp" }],
+    images: [{ url: "/images/logo.png" }],
   },
 };
 
