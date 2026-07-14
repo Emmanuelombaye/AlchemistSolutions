@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.seo.description,
   metadataBase: new URL(`https://${siteConfig.domain}`),
+  applicationName: siteConfig.name,
   openGraph: {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,

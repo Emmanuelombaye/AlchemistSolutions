@@ -77,17 +77,20 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-surface/95 shadow-[0_1px_0_var(--line)] backdrop-blur-md supports-[backdrop-filter]:bg-surface/90">
       <TopBar />
-      <div className="container-site flex items-center justify-between gap-3 py-3 md:py-4">
-        <Link href="/" className="flex min-w-0 items-center gap-2.5 no-underline">
-          <span className="grid h-10 w-10 shrink-0 place-items-center bg-brand text-sm font-bold text-white">
+      <div className="container-site flex h-14 items-center justify-between gap-3 md:h-16">
+        <Link
+          href="/"
+          className="flex min-w-0 items-center gap-2.5 no-underline"
+        >
+          <span className="grid h-9 w-9 shrink-0 place-items-center bg-brand text-xs font-bold text-white md:h-10 md:w-10 md:text-sm">
             AS
           </span>
-          <span className="truncate text-base font-bold tracking-tight text-ink sm:text-lg">
+          <span className="truncate text-[0.95rem] font-bold tracking-tight text-ink md:text-lg">
             {siteConfig.shortName}
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 xl:flex">
+        <nav className="hidden items-center gap-6 lg:flex xl:gap-7">
           {siteConfig.nav.map((item) => (
             <Link
               key={item.href}
@@ -99,21 +102,17 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 sm:gap-3">
-          <a
-            href={`tel:${siteConfig.contact.phone}`}
-            aria-label={`Call ${siteConfig.contact.phoneDisplay}`}
-            className="grid h-11 w-11 place-items-center bg-brand text-white no-underline sm:hidden"
+        <div className="flex shrink-0 items-center gap-2 md:gap-3">
+          <Link
+            href="/contact"
+            className="btn hidden min-h-10 px-4 lg:inline-flex"
           >
-            <Phone size={16} />
-          </a>
-          <Link href="/contact" className="btn hidden min-h-11 sm:inline-flex">
             Get In Touch
             <ArrowUpRight size={16} />
           </Link>
           <a
             href={getWhatsAppUrl()}
-            className="hidden items-center gap-2 text-ink no-underline lg:inline-flex"
+            className="hidden items-center gap-2 text-ink no-underline xl:inline-flex"
           >
             <span className="grid h-10 w-10 place-items-center bg-brand text-white">
               <Phone size={16} />
