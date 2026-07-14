@@ -3,6 +3,7 @@ import { Archivo } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileCallBar } from "@/components/layout/MobileCallBar";
+import { Providers } from "@/components/Providers";
 import { siteConfig } from "@/lib/site.config";
 import "./globals.css";
 
@@ -44,10 +45,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${archivo.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <MobileCallBar />
+        <Providers>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <MobileCallBar />
+        </Providers>
       </body>
     </html>
   );

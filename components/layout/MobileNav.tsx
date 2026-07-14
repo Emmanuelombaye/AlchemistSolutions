@@ -6,12 +6,44 @@ import Link from "next/link";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
 import { Logo } from "@/components/brand/Logo";
+import { useI18n } from "@/lib/i18n/provider";
+import { LanguageToggle } from "@/components/layout/LanguageToggle";
 
 export function MobileNav() {
+  const { t } = useI18n();
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [expanded, setExpanded] = useState<string | null>("/services");
   const panelId = useId();
+
+  const nav = [
+    { label: t.nav.home, href: "/" },
+    { label: t.nav.about, href: "/about" },
+    {
+      label: t.nav.services,
+      href: "/services",
+      children: [
+        { label: t.nav.allServices, href: "/services" },
+        ...t.services.items.map((item) => ({
+          label: item.title,
+          href: `/services/${item.slug}`,
+        })),
+      ],
+    },
+    {
+      label: t.nav.projects,
+      href: "/projects",
+      children: [
+        { label: t.nav.allProjects, href: "/projects" },
+        ...t.projects.items.slice(0, 2).map((item) => ({
+          label: item.title,
+          href: `/projects/${item.slug}`,
+        })),
+      ],
+    },
+    { label: t.nav.news, href: "/blog" },
+    { label: t.nav.contact, href: "/contact" },
+  ];
 
   useEffect(() => {
     setMounted(true);
@@ -44,7 +76,7 @@ export function MobileNav() {
           <div className="fixed inset-0 z-[100] lg:hidden" role="presentation">
             <button
               type="button"
-              aria-label="Close menu"
+              aria-label={t.common.closeMenu}
               className="absolute inset-0 bg-ink/50"
               onClick={() => setOpen(false)}
             />
@@ -56,22 +88,24 @@ export function MobileNav() {
               aria-label="Site menu"
               className="absolute inset-x-0 top-0 flex max-h-[min(100dvh,100%)] flex-col bg-white shadow-[0_16px_40px_rgba(21,22,28,0.18)]"
             >
-            <div className="flex h-16 items-center justify-between border-b border-line px-4">
+              <div className="flex h-16 items-center justify-between border-b border-line px-4">
                 <Logo size="sm" />
-                <button
-                  type="button"
-                  aria-label="Close menu"
-                  onClick={() => setOpen(false)}
-                  className="grid h-10 w-10 place-items-center border border-ink/12 text-ink"
-                >
-                  <X size={20} />
-                </button>
+                <div className="flex items-center gap-2">
+                  <LanguageToggle />
+                  <button
+                    type="button"
+                    aria-label={t.common.closeMenu}
+                    onClick={() => setOpen(false)}
+                    className="grid h-10 w-10 place-items-center border border-ink/12 text-ink"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
               </div>
 
               <nav className="flex-1 overflow-y-auto overscroll-contain px-2 py-2">
-                {siteConfig.nav.map((item) => {
-                  const children =
-                    "children" in item && item.children ? item.children : null;
+                {nav.map((item) => {
+                  const children = "children" in item ? item.children : null;
                   const isOpen = expanded === item.href;
 
                   if (!children) {
@@ -102,7 +136,6 @@ export function MobileNav() {
                         </Link>
                         <button
                           type="button"
-                          aria-label={`${isOpen ? "Hide" : "Show"} ${item.label} links`}
                           aria-expanded={isOpen}
                           onClick={() =>
                             setExpanded((current) =>
@@ -151,14 +184,14 @@ export function MobileNav() {
                   href={getWhatsAppUrl()}
                   className="flex min-h-11 items-center justify-center gap-2 bg-brand px-4 text-sm font-bold uppercase tracking-wide text-white no-underline"
                 >
-                  WhatsApp Us
+                  {t.common.whatsAppUs}
                 </a>
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
                   className="flex min-h-11 items-center justify-center border border-ink px-4 text-sm font-bold uppercase tracking-wide text-ink no-underline"
                 >
-                  Get In Touch
+                  {t.common.getInTouch}
                 </Link>
               </div>
             </div>
@@ -171,7 +204,7 @@ export function MobileNav() {
     <>
       <button
         type="button"
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? t.common.closeMenu : t.common.openMenu}
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((value) => !value)}

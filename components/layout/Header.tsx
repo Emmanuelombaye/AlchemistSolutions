@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Clock3, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { Logo } from "@/components/brand/Logo";
+import { LanguageToggle } from "@/components/layout/LanguageToggle";
+import { useI18n } from "@/lib/i18n/provider";
 
 function SocialGlyph({ label }: { label: string }) {
   const common = {
@@ -44,6 +48,7 @@ function SocialGlyph({ label }: { label: string }) {
 }
 
 export function TopBar() {
+  const { t } = useI18n();
   return (
     <div className="hidden border-b border-line bg-surface-muted lg:block">
       <div className="container-site flex items-center justify-between py-2.5 text-sm text-body">
@@ -62,7 +67,7 @@ export function TopBar() {
         <div className="flex items-center gap-6">
           <span className="inline-flex items-center gap-2">
             <Clock3 size={14} className="text-brand" />
-            {siteConfig.hours}
+            {t.hours}
           </span>
           <span className="inline-flex items-center gap-2">
             <MapPin size={14} className="text-brand" />
@@ -75,6 +80,16 @@ export function TopBar() {
 }
 
 export function Header() {
+  const { t } = useI18n();
+  const nav = [
+    { label: t.nav.home, href: "/" },
+    { label: t.nav.about, href: "/about" },
+    { label: t.nav.services, href: "/services" },
+    { label: t.nav.projects, href: "/projects" },
+    { label: t.nav.news, href: "/blog" },
+    { label: t.nav.contact, href: "/contact" },
+  ];
+
   return (
     <header className="sticky top-0 z-50 bg-surface/95 shadow-[0_1px_0_var(--line)] backdrop-blur-md supports-[backdrop-filter]:bg-surface/90">
       <TopBar />
@@ -88,7 +103,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex xl:gap-7">
-          {siteConfig.nav.map((item) => (
+          {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -100,11 +115,12 @@ export function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2 md:gap-3">
+          <LanguageToggle />
           <Link
             href="/contact"
             className="btn hidden min-h-10 px-4 lg:inline-flex"
           >
-            Get In Touch
+            {t.common.getInTouch}
             <ArrowUpRight size={16} />
           </Link>
           <a
