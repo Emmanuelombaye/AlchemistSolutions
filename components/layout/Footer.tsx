@@ -23,7 +23,7 @@ export function Footer() {
         <Reveal from="left" className="lg:col-span-2">
           <Link
             href="/"
-            className="mb-5 inline-flex no-underline"
+            className="mb-5 inline-flex bg-white p-1.5 no-underline"
             aria-label={siteConfig.name}
           >
             <Logo size="lg" />

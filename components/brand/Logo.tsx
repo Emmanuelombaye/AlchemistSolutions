@@ -26,7 +26,7 @@ export function Logo({
 
   return (
     <span
-      className={`relative inline-flex shrink-0 items-center bg-white ${box} ${className}`}
+      className={`relative inline-flex shrink-0 items-center bg-transparent ${box} ${className}`}
       aria-label={siteConfig.name}
     >
       <Image
