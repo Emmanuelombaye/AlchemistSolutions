@@ -2,17 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site.config";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) setExpanded(null);
   }, [open]);
 
   return (
@@ -49,24 +54,82 @@ export function MobileNav() {
                 <X size={20} />
               </button>
             </div>
-            <div className="flex-1 overflow-y-auto px-4 py-3">
-              {siteConfig.nav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block border-b border-line py-3.5 text-[0.95rem] font-semibold text-ink no-underline"
-                >
-                  {item.label}
-                </Link>
-              ))}
+
+            <div className="flex-1 overflow-y-auto overscroll-contain px-4 py-2">
+              {siteConfig.nav.map((item) => {
+                const children =
+                  "children" in item && item.children ? item.children : null;
+                const isOpen = expanded === item.href;
+
+                if (!children) {
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className="block border-b border-line py-3.5 text-[0.95rem] font-semibold text-ink no-underline"
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <div key={item.href} className="border-b border-line">
+                    <div className="flex items-center gap-1">
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        className="flex-1 py-3.5 text-[0.95rem] font-semibold text-ink no-underline"
+                      >
+                        {item.label}
+                      </Link>
+                      <button
+                        type="button"
+                        aria-label={`${isOpen ? "Collapse" : "Expand"} ${item.label}`}
+                        aria-expanded={isOpen}
+                        onClick={() =>
+                          setExpanded((v) => (v === item.href ? null : item.href))
+                        }
+                        className="grid h-11 w-11 place-items-center text-ink"
+                      >
+                        <ChevronDown
+                          size={18}
+                          className={`transition ${isOpen ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </div>
+                    {isOpen ? (
+                      <div className="pb-3 pl-3">
+                        {children.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setOpen(false)}
+                            className="block py-2.5 text-sm text-body no-underline hover:text-brand"
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                );
+              })}
             </div>
-            <div className="space-y-3 border-t border-line p-4">
+
+            <div className="space-y-3 border-t border-line p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+              <a
+                href={`tel:${siteConfig.contact.phone}`}
+                className="flex min-h-12 items-center justify-center gap-2 border border-ink/15 bg-white px-4 text-sm font-bold text-ink no-underline"
+              >
+                <Phone size={16} className="text-brand" />
+                {siteConfig.contact.phoneDisplay}
+              </a>
               <a
                 href={getWhatsAppUrl()}
                 className="flex min-h-12 items-center justify-center gap-2 bg-brand px-4 text-sm font-bold uppercase tracking-wide text-white no-underline"
               >
-                <Phone size={16} />
                 WhatsApp Us
               </a>
               <Link

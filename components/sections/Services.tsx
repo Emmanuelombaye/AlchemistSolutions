@@ -45,20 +45,20 @@ export function Services({ limit }: { limit?: number }) {
                 </span>
               </Link>
 
-              <div className="flex flex-1 flex-col p-5 sm:p-6">
-                <h3 className="heading mb-2 text-[1.2rem] leading-snug sm:text-[1.35rem]">
+              <div className="flex flex-1 flex-col p-4 sm:p-6">
+                <h3 className="heading mb-2 text-[1.15rem] leading-snug sm:text-[1.35rem]">
                   {service.title}
                 </h3>
-                <p className="mb-4 text-sm leading-relaxed text-body">
+                <p className="mb-4 text-[0.875rem] leading-relaxed text-body sm:text-sm">
                   {service.excerpt}
                 </p>
 
                 {service.highlights?.length ? (
-                  <ul className="mb-5 space-y-2">
+                  <ul className="mb-4 space-y-2 sm:mb-5">
                     {service.highlights.slice(0, 3).map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-2 text-[0.8rem] leading-snug text-ink-soft"
+                        className="flex items-start gap-2 text-[0.78rem] leading-snug text-ink-soft sm:text-[0.8rem]"
                       >
                         <Check
                           size={14}

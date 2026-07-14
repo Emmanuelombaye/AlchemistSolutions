@@ -35,11 +35,11 @@ export function Projects({ limit }: { limit?: number }) {
                 quality={70}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-                <p className="mb-1 text-[0.7rem] font-bold uppercase tracking-[0.12em] text-brand">
+              <div className="absolute inset-x-0 bottom-0 p-4 text-white sm:p-5">
+                <p className="mb-1 text-[0.65rem] font-bold uppercase tracking-[0.12em] text-brand sm:text-[0.7rem]">
                   {project.category}
                 </p>
-                <h3 className="text-lg font-bold">{project.title}</h3>
+                <h3 className="text-base font-bold sm:text-lg">{project.title}</h3>
               </div>
             </Link>
           ))}

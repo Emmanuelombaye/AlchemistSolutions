@@ -28,15 +28,15 @@ export function News({ limit }: { limit?: number }) {
                   quality={70}
                 />
               </div>
-              <div className="border border-t-0 border-line p-6">
+              <div className="border border-t-0 border-line p-5 sm:p-6">
                 <p className="mb-2 text-[0.7rem] font-bold uppercase tracking-[0.1em] text-brand">
                   {post.date}
                 </p>
-                <h3 className="heading mb-3 text-xl">{post.title}</h3>
+                <h3 className="heading mb-3 text-lg sm:text-xl">{post.title}</h3>
                 <p className="mb-4 text-sm leading-relaxed">{post.excerpt}</p>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-[0.1em] text-ink no-underline hover:text-brand"
+                  className="inline-flex min-h-11 items-center gap-1 text-xs font-bold uppercase tracking-[0.1em] text-ink no-underline hover:text-brand"
                 >
                   Read More <ArrowUpRight size={14} />
                 </Link>

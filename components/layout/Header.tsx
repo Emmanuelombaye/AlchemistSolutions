@@ -101,8 +101,8 @@ export function Header() {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <a
-            href={getWhatsAppUrl()}
-            aria-label="WhatsApp"
+            href={`tel:${siteConfig.contact.phone}`}
+            aria-label={`Call ${siteConfig.contact.phoneDisplay}`}
             className="grid h-11 w-11 place-items-center bg-brand text-white no-underline sm:hidden"
           >
             <Phone size={16} />

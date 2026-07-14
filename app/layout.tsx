@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Archivo } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MobileCallBar } from "@/components/layout/MobileCallBar";
 import { siteConfig } from "@/lib/site.config";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileCallBar />
       </body>
     </html>
   );

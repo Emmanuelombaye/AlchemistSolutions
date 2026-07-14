@@ -8,7 +8,7 @@ export function AboutPreview() {
   return (
     <section className="section-pad bg-surface">
       <div className="container-site grid items-center gap-12 lg:grid-cols-2">
-        <div className="relative grid grid-cols-2 gap-4">
+        <div className="relative grid grid-cols-2 gap-4 pb-8 md:pb-4">
           <div className="relative col-span-2 aspect-[16/10] overflow-hidden md:col-span-1 md:aspect-[3/4] md:mt-10">
             <Image
               src={about.image}
@@ -29,9 +29,11 @@ export function AboutPreview() {
               quality={70}
             />
           </div>
-          <div className="absolute -bottom-4 left-4 bg-brand px-5 py-4 text-white md:left-auto md:right-8">
-            <p className="text-3xl font-bold leading-none">{about.years}</p>
-            <p className="mt-1 text-[0.7rem] font-bold uppercase tracking-[0.1em]">
+          <div className="absolute bottom-0 left-3 bg-brand px-4 py-3 text-white sm:left-4 sm:px-5 sm:py-4 md:left-auto md:right-8">
+            <p className="text-2xl font-bold leading-none sm:text-3xl">
+              {about.years}
+            </p>
+            <p className="mt-1 text-[0.65rem] font-bold uppercase tracking-[0.1em] sm:text-[0.7rem]">
               {about.yearsLabel}
             </p>
           </div>

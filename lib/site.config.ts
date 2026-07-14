@@ -15,7 +15,7 @@ export const siteConfig = {
   contact: {
     whatsapp: "+25476290213",
     phone: "+25476290213",
-    phoneDisplay: "+254 762 902 13",
+    phoneDisplay: "+254 76 290 213",
     email: "hello@alchemisttile.com",
     whatsappMessage:
       "Hi Alchemist Solutions, I'd like a flooring assessment...",
