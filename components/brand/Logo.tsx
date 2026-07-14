@@ -3,10 +3,14 @@ import { siteConfig } from "@/lib/site.config";
 
 type LogoSize = "sm" | "md" | "lg";
 
-const sizeMap: Record<LogoSize, { className: string; px: number }> = {
-  sm: { className: "h-9 w-9", px: 36 },
-  md: { className: "h-11 w-11 md:h-12 md:w-12", px: 48 },
-  lg: { className: "h-16 w-16", px: 64 },
+/** Wordmark is wider than tall after trim (~1.54 ratio). */
+const sizeMap: Record<
+  LogoSize,
+  { className: string; width: number; height: number }
+> = {
+  sm: { className: "h-10 w-auto", width: 120, height: 78 },
+  md: { className: "h-14 w-auto md:h-16", width: 180, height: 117 },
+  lg: { className: "h-20 w-auto md:h-24", width: 220, height: 143 },
 };
 
 export function Logo({
@@ -18,21 +22,21 @@ export function Logo({
   priority?: boolean;
   className?: string;
 }) {
-  const { className: box, px } = sizeMap[size];
+  const { className: box, width, height } = sizeMap[size];
 
   return (
     <span
-      className={`relative inline-block shrink-0 overflow-hidden bg-black ${box} ${className}`}
+      className={`relative inline-flex shrink-0 items-center bg-white ${box} ${className}`}
       aria-label={siteConfig.name}
     >
       <Image
         src="/images/logo.webp"
         alt={siteConfig.name}
-        width={px}
-        height={px}
+        width={width}
+        height={height}
         priority={priority}
-        className="h-full w-full object-cover"
-        sizes={`${px}px`}
+        className="h-full w-auto object-contain"
+        sizes="(max-width:768px) 160px, 200px"
       />
     </span>
   );

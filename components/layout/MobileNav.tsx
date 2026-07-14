@@ -56,7 +56,7 @@ export function MobileNav() {
               aria-label="Site menu"
               className="absolute inset-x-0 top-0 flex max-h-[min(100dvh,100%)] flex-col bg-white shadow-[0_16px_40px_rgba(21,22,28,0.18)]"
             >
-              <div className="flex h-14 items-center justify-between border-b border-line px-4">
+            <div className="flex h-16 items-center justify-between border-b border-line px-4">
                 <Logo size="sm" />
                 <button
                   type="button"

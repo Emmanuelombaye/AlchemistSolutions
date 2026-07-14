@@ -78,7 +78,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-surface/95 shadow-[0_1px_0_var(--line)] backdrop-blur-md supports-[backdrop-filter]:bg-surface/90">
       <TopBar />
-      <div className="container-site flex h-14 items-center justify-between gap-3 md:h-16">
+      <div className="container-site flex h-16 items-center justify-between gap-3 md:h-20">
         <Link
           href="/"
           className="flex min-w-0 items-center no-underline"
